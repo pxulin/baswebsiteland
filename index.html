@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <p> <img src="assets/ligar.png" alt="" width="14px
+                            "> +1800 456 7890</p>
+                    </li>
+                    <li>
+                        <p><img src="assets/e-mail.png" alt="" width="14px
+                    "> info@pelec.com</p>
+                    </li>
+                    <li>
+                        <p> <img src="assets/localizacao.png" alt="" width="14px
+                            "> 56, suit 789, Rio de Janeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <nav>
+                <div class="logo"><img src="logo.png" width="100px" alt=""></div>
+
+
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button id="menu-button" onclick="aparecer()"><img src="assets/menu-aberto.png" width="30px"
+                    alt=""></button>
+                <button id="menu-x" onclick="desaparecer()"><img src="assets/letra-x.png" width="30px" alt=""></button>
+            </nav>
+        </header>
+        <main>
+            <h1>We Provide Innovated</h1>
+            <p>We deliver sustainable and services to various industries within the the USA</p>
+            <p>Our partners and clients value us for the quality of our products.</p>
+            <input type="button" value="Get Quote">
+        </main>
+    </div>
+
+    <script>
+        let menu = document.getElementById("menu")
+        let menubutton = document.getElementById("menu-button")
+        let menux = document.getElementById("menu-x")
+        menu.style.display = "flex"
+        menux.style.display = "flex"
+        menubutton.style.display = "none"
+        function aparecer() {
+           
+            menu.style.display = "flex"
+            menubutton.style.display = "none"
+            menux.style.display = "flex"
+        }
+
+        function desaparecer() {
+            menu.style.display = "none"
+            menubutton.style.display = "flex"
+            menux.style.display = "none"
+           
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+hr {
+    border: 1pt solid white;
+}
+
+.background {
+    background: url("https://smashinglogo.com/v3/envision/image.jpg?id=f80febf8-a1a1-462f-b351-dabc06bfa05b&format=desktop");
+    filter: brightness(87%);
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 2.3rem;
+}
+
+li,
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+main p{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #62B5E5;
+    transition: all 0.3s;
+}
+
+main {
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+input {
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background: #62B5E5;
+}
+
+input:hover {
+    background: #3ea5e0;
+    cursor: pointer;
+}
+
+#menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-x {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+
+    .nav {
+        display: flex;
+        margin: 0;
+        padding: 15px;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        background: transparent;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        
+    }
+
+}
